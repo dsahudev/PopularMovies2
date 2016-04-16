@@ -4,22 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.android.deepaksahu.popularmovies2.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    <ImageView
-        android:id="@+id/imageview"
+    <GridView
+        android:id="@+id/main_screen_gridview"
+        android:numColumns="2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="50sp"
-        android:layout_marginBottom="50sp"/>
+        android:verticalSpacing="0dp"
+        android:horizontalSpacing="0dp"
+        android:stretchMode="columnWidth"
+
+        >
+
+    </GridView>
 </RelativeLayout>
